@@ -9,7 +9,7 @@ function atualizaCarrinho(){
     listaCarrinho.innerHTML = "";
     total = 0;
 
-    carrinho.foreach((item, index) => {
+    carrinho.forEach((item, index) => {
         li = document.createElement("li");
         li.innerHTML = item.nome + " - " + item.preco;
         listaCarrinho.appendChild(li);
